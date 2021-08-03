@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<form action='{{ url_for("stocks") }}' method="POST">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Enter the ticker symbol</label>
+        <input type="text" class="form-control" name="ticker-symbol" aria-describedby="ticker symbol">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+{% endblock content %}
